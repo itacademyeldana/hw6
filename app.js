@@ -9,16 +9,22 @@ function counterFunction(count) {
 
         if (numberValue === 0) {
             return;
-        };
+        }
 
         numberValue--;
         number.value = numberValue;
-    });
+        alert('вы нажали на минус)')
+    })
 
     plus.addEventListener('click', function() {
         numberValue++;
         number.value = numberValue;
-    });
+        alert('вы нажали на плюс)')
+    })
+
+    number.addEventListener('click', function () {
+        alert('вы нажали на инпут)')
+    })
 
 }
 
